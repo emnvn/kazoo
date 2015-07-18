@@ -12,5 +12,16 @@
 -define(PORT_PVT_STATE, <<"pvt_port_state">>).
 -define(PVT_SENT, <<"pvt_sent">>).
 
+-define(PORT_STATES,
+        [?PORT_WAITING
+        ,?PORT_SUBMITTED
+        ,?PORT_PENDING
+        ,?PORT_SCHEDULED
+        ,?PORT_COMPLETE
+        ,?PORT_REJECT
+        ,?PORT_CANCELED
+        ]
+       ).
+
 -define(WH_PORT_REQUEST_HRL, 'true').
 -endif.
